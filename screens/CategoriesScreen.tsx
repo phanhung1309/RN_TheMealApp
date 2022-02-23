@@ -6,7 +6,7 @@ interface Props {}
 const CategoriesScreen: React.FC<Props> = () => {
   return (
     <View style={styles.screen}>
-      <Text>CategoriesScreen</Text>
+      <Text style={styles.text}>The Categories Screen</Text>
     </View>
   );
 };
@@ -18,5 +18,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  text: {
+    fontFamily: 'OpenSans-Bold',
+    fontSize: 16,
+    color: 'black',
   },
 });
