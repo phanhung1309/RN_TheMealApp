@@ -1,12 +1,18 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 import React from 'react';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
 
-interface Props {}
+type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.Categories>;
 
-const CategoriesScreen: React.FC<Props> = () => {
+const CategoriesScreen: React.FC<Props> = ({navigation}) => {
   return (
     <View style={styles.screen}>
       <Text style={styles.text}>The Categories Screen</Text>
+      <Button
+        title="Go to Category Meals"
+        onPress={() => navigation.navigate(MealsRoutes.CategoryMeals)}
+      />
     </View>
   );
 };
