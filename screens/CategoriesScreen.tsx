@@ -1,33 +1,40 @@
-import {StyleSheet, Text, View, Button} from 'react-native';
+import {StyleSheet, Text, View, FlatList} from 'react-native';
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
+import {categoriesData} from '../data/categoriesData';
+import typography from '../styles/typography';
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.Categories>;
 
-const CategoriesScreen: React.FC<Props> = ({navigation}) => {
+const CategoriesScreen: React.FC<Props> = () => {
   return (
-    <View style={styles.screen}>
-      <Text style={styles.text}>The Categories Screen</Text>
-      <Button
-        title="Go to Category Meals"
-        onPress={() => navigation.navigate(MealsRoutes.CategoryMeals)}
-      />
-    </View>
+    <FlatList
+      numColumns={2}
+      keyExtractor={item => item.id}
+      data={categoriesData}
+      renderItem={({item}) => (
+        <View style={styles.categoryItem}>
+          <Text style={styles.text}>{item.title}</Text>
+        </View>
+      )}
+    />
   );
 };
 
 export default CategoriesScreen;
 
 const styles = StyleSheet.create({
-  screen: {
+  categoryItem: {
     flex: 1,
+    padding: 15,
+    height: 160,
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'grey',
   },
   text: {
-    fontFamily: 'OpenSans-Bold',
-    fontSize: 16,
-    color: 'black',
+    ...typography.primarySemiBold,
   },
 });

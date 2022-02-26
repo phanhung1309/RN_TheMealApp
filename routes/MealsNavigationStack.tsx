@@ -6,6 +6,7 @@ import {
 import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
+import {colors} from '../styles/colors';
 
 export enum MealsRoutes {
   Categories = 'Categories',
@@ -22,7 +23,7 @@ export type MealsParamList = {
 const screenOptions: NativeStackNavigationOptions = {
   headerTintColor: 'white',
   headerStyle: {
-    backgroundColor: '#d31145',
+    backgroundColor: colors.primary,
   },
   headerTitleAlign: 'center',
 };
