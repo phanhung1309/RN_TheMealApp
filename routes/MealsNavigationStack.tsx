@@ -7,6 +7,7 @@ import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
 import {colors} from '../styles/colors';
+import {categoriesData} from '../data/categoriesData';
 
 export enum MealsRoutes {
   Categories = 'Categories',
@@ -16,14 +17,16 @@ export enum MealsRoutes {
 
 export type MealsParamList = {
   [MealsRoutes.Categories]: undefined;
-  [MealsRoutes.CategoryMeals]: undefined;
+  [MealsRoutes.CategoryMeals]: {
+    categoryId: string;
+  };
   [MealsRoutes.MealDetail]: undefined;
 };
 
 const screenOptions: NativeStackNavigationOptions = {
   headerTintColor: 'white',
   headerStyle: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.secondary,
   },
   headerTitleAlign: 'center',
 };
@@ -36,12 +39,17 @@ const MealsNavigationStack = (): JSX.Element => {
       <Stack.Screen
         name={MealsRoutes.Categories}
         component={CategoriesScreen}
-        options={screenOptions}
+        options={{...screenOptions, title: 'Meal Categories'}}
       />
       <Stack.Screen
         name={MealsRoutes.CategoryMeals}
         component={CategoryMealsScreen}
-        options={screenOptions}
+        options={({route}) => {
+          const selectedCategory = categoriesData.find(
+            cat => cat.id === route.params.categoryId,
+          );
+          return {...screenOptions, title: selectedCategory.title};
+        }}
       />
       <Stack.Screen
         name={MealsRoutes.MealDetail}

@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, FlatList} from 'react-native';
+import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
@@ -7,16 +7,24 @@ import typography from '../styles/typography';
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.Categories>;
 
-const CategoriesScreen: React.FC<Props> = () => {
+const CategoriesScreen: React.FC<Props> = ({navigation}) => {
   return (
     <FlatList
       numColumns={2}
       keyExtractor={item => item.id}
       data={categoriesData}
       renderItem={({item}) => (
-        <View style={styles.categoryItem}>
-          <Text style={styles.text}>{item.title}</Text>
-        </View>
+        <TouchableOpacity
+          style={styles.categoryItem}
+          onPress={() =>
+            navigation.navigate(MealsRoutes.CategoryMeals, {
+              categoryId: item.id,
+            })
+          }>
+          <View>
+            <Text style={styles.text}>{item.title}</Text>
+          </View>
+        </TouchableOpacity>
       )}
     />
   );
