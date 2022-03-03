@@ -1,5 +1,5 @@
 import {FlatList} from 'react-native';
-import React from 'react';
+import * as React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
 import {categoriesData} from '../data/categoriesData';
@@ -11,6 +11,7 @@ const CategoriesScreen: React.FC<Props> = ({navigation}) => {
   return (
     <FlatList
       numColumns={2}
+      showsVerticalScrollIndicator={false}
       keyExtractor={item => item.id}
       data={categoriesData}
       renderItem={({item}) => (

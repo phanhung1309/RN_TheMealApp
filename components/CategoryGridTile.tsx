@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import * as React from 'react';
 import typography from '../styles/typography';
 
 interface Props {
