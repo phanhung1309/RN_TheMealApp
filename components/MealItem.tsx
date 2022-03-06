@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import typography from '../styles/typography';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 interface Props {
   title: string;
@@ -38,9 +39,15 @@ const MealItem: React.FC<Props> = ({
             </ImageBackground>
           </View>
           <View style={[styles.mealRow, styles.mealDetails]}>
-            <Text style={styles.mealInfo}>{durations}m</Text>
-            <Text style={styles.mealInfo}>{complexity.toUpperCase()}</Text>
-            <Text style={styles.mealInfo}>{affordability.toUpperCase()}</Text>
+            <Text style={styles.mealInfo}>
+              <Icon name="timer" size={12} /> {durations}m
+            </Text>
+            <Text style={styles.mealInfo}>
+              <Icon name="check" size={12} /> {complexity.toUpperCase()}
+            </Text>
+            <Text style={styles.mealInfo}>
+              <Icon name="person" size={12} /> {affordability.toUpperCase()}
+            </Text>
           </View>
         </View>
       </TouchableOpacity>
