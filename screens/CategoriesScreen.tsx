@@ -10,6 +10,7 @@ type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.Categories>;
 const CategoriesScreen: React.FC<Props> = ({navigation}) => {
   return (
     <FlatList
+      showsVerticalScrollIndicator={false}
       numColumns={2}
       keyExtractor={item => item.id}
       data={categoriesData}

@@ -8,6 +8,8 @@ import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
 import {colors} from '../styles/colors';
 import {categoriesData} from '../data/categoriesData';
+import {mealData} from '../data/mealData';
+import HeaderButton from '../components/HeaderButton';
 
 export enum MealsRoutes {
   Categories = 'Categories',
@@ -20,7 +22,9 @@ export type MealsParamList = {
   [MealsRoutes.CategoryMeals]: {
     categoryId: string;
   };
-  [MealsRoutes.MealDetail]: undefined;
+  [MealsRoutes.MealDetail]: {
+    mealId: string;
+  };
 };
 
 const screenOptions: NativeStackNavigationOptions = {
@@ -29,6 +33,7 @@ const screenOptions: NativeStackNavigationOptions = {
     backgroundColor: colors.secondary,
   },
   headerTitleAlign: 'center',
+  headerBackTitleVisible: false,
 };
 
 const Stack = createNativeStackNavigator<MealsParamList>();
@@ -54,7 +59,17 @@ const MealsNavigationStack = (): JSX.Element => {
       <Stack.Screen
         name={MealsRoutes.MealDetail}
         component={MealDetailScreen}
-        options={screenOptions}
+        options={({route}) => {
+          const selectedMeal = mealData.find(
+            meal => meal.id === route.params.mealId,
+          );
+          return {
+            ...screenOptions,
+            title: selectedMeal.title,
+            headerTitleStyle: {fontSize: 15},
+            headerRight: () => <HeaderButton onPress={() => {}} />,
+          };
+        }}
       />
     </Stack.Navigator>
   );

@@ -27,7 +27,9 @@ const CategoryMealsScreen: React.FC<Props> = ({navigation, route}) => {
             complexity={item.complexity}
             affordability={item.affordability}
             imageUrl={item.imageUrl}
-            onSelect={() => navigation.navigate(MealsRoutes.MealDetail)}
+            onSelect={() =>
+              navigation.navigate(MealsRoutes.MealDetail, {mealId: item.id})
+            }
           />
         )}
       />
