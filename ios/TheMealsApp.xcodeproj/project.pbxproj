@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00212832AA064DD28C23D813 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */; };
 		00E356F31AD99517003FC87E /* TheMealsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TheMealsAppTests.m */; };
+		0ED8A781998043F7A575D4F6 /* OpenSans_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		0ED8A781998043F7A575D4F6 /* OpenSans_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */; };
-		9AD7069AB28C4403ABDF3BDC /* OpenSans_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */; };
-		FF79EE68654E467EB51CAC0B /* OpenSans_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */; };
-		00212832AA064DD28C23D813 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */; };
-		92AC9AAF06784DD5AB6264FD /* OpenSans-Light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */; };
-		F8484A419ED6466EA8813F10 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */; };
-		F58FB634067444F3800500AB /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */; };
-		9E23F46A7E7B426AA1EB48D8 /* OpenSans-SemiBold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */; };
-		379AAD470EDE47FF8CC999C5 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */; };
 		2347C9A4F8004C74BF724659 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F5672EFF4C84008A0957655 /* OpenSans.ttf */; };
+		379AAD470EDE47FF8CC999C5 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		92AC9AAF06784DD5AB6264FD /* OpenSans-Light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */; };
+		9AD7069AB28C4403ABDF3BDC /* OpenSans_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */; };
+		9E23F46A7E7B426AA1EB48D8 /* OpenSans-SemiBold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */; };
+		AC1601E9391FA834A3E4034F /* libPods-TheMealsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F044DF37AB917D9263BD2 /* libPods-TheMealsApp.a */; };
+		F58FB634067444F3800500AB /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */; };
+		F65BDFC41F9DC7E4556BC489 /* libPods-TheMealsApp-TheMealsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CDD32E8AE37F657D4386BE /* libPods-TheMealsApp-TheMealsAppTests.a */; };
+		F8484A419ED6466EA8813F10 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */; };
+		FF79EE68654E467EB51CAC0B /* OpenSans_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,24 +40,30 @@
 		00E356EE1AD99517003FC87E /* TheMealsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TheMealsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMealsAppTests.m; sourceTree = "<group>"; };
+		0F5672EFF4C84008A0957655 /* OpenSans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OpenSans.ttf; path = ../assets/fonts/OpenSans.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TheMealsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMealsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TheMealsApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TheMealsApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TheMealsApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TheMealsApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TheMealsApp/main.m; sourceTree = "<group>"; };
+		28CDD32E8AE37F657D4386BE /* libPods-TheMealsApp-TheMealsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheMealsApp-TheMealsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OpenSans_italic.ttf; path = ../assets/fonts/OpenSans_italic.ttf; sourceTree = "<group>"; };
+		4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		5A478A2108DD0FC5EF37D175 /* Pods-TheMealsApp-TheMealsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMealsApp-TheMealsAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A9F044DF37AB917D9263BD2 /* libPods-TheMealsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheMealsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E85C0AB246E9494EE6445F /* Pods-TheMealsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMealsApp.debug.xcconfig"; path = "Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light_italic.ttf"; path = "../assets/fonts/OpenSans-Light_italic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TheMealsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62512088117AA654C79F3B0 /* Pods-TheMealsApp-TheMealsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMealsApp-TheMealsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OpenSans_bold_italic.ttf; path = ../assets/fonts/OpenSans_bold_italic.ttf; sourceTree = "<group>"; };
+		C64058E3C8853BCAFA0D3A73 /* Pods-TheMealsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMealsApp.release.xcconfig"; path = "Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OpenSans_bold.ttf; path = ../assets/fonts/OpenSans_bold.ttf; sourceTree = "<group>"; };
+		E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold_italic.ttf"; path = "../assets/fonts/OpenSans-SemiBold_italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */ = {isa = PBXFileReference; name = "OpenSans_bold_italic.ttf"; path = "../assets/fonts/OpenSans_bold_italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */ = {isa = PBXFileReference; name = "OpenSans_bold.ttf"; path = "../assets/fonts/OpenSans_bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */ = {isa = PBXFileReference; name = "OpenSans_italic.ttf"; path = "../assets/fonts/OpenSans_italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light_italic.ttf"; path = "../assets/fonts/OpenSans-Light_italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light.ttf"; path = "../assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */ = {isa = PBXFileReference; name = "OpenSans-SemiBold_italic.ttf"; path = "../assets/fonts/OpenSans-SemiBold_italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "OpenSans-SemiBold.ttf"; path = "../assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0F5672EFF4C84008A0957655 /* OpenSans.ttf */ = {isa = PBXFileReference; name = "OpenSans.ttf"; path = "../assets/fonts/OpenSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65BDFC41F9DC7E4556BC489 /* libPods-TheMealsApp-TheMealsAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1601E9391FA834A3E4034F /* libPods-TheMealsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +120,40 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5A9F044DF37AB917D9263BD2 /* libPods-TheMealsApp.a */,
+				28CDD32E8AE37F657D4386BE /* libPods-TheMealsApp-TheMealsAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67A250F4A8384FEDB616000F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */,
+				E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */,
+				4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */,
+				7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */,
+				819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */,
+				D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */,
+				4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */,
+				E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */,
+				CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */,
+				0F5672EFF4C84008A0957655 /* OpenSans.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		819B168CE59E7402D0459EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E85C0AB246E9494EE6445F /* Pods-TheMealsApp.debug.xcconfig */,
+				C64058E3C8853BCAFA0D3A73 /* Pods-TheMealsApp.release.xcconfig */,
+				A62512088117AA654C79F3B0 /* Pods-TheMealsApp-TheMealsAppTests.debug.xcconfig */,
+				5A478A2108DD0FC5EF37D175 /* Pods-TheMealsApp-TheMealsAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -130,6 +172,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				67A250F4A8384FEDB616000F /* Resources */,
+				819B168CE59E7402D0459EFC /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,24 +188,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67A250F4A8384FEDB616000F /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BBC4C182D86F4AF19FBE1620 /* OpenSans_bold_italic.ttf */,
-				E537C7E1B2F641EAB5E3D521 /* OpenSans_bold.ttf */,
-				4BAB16EE5BEA4F4F9D637892 /* OpenSans_italic.ttf */,
-				7D7AE4385CC4452BBFE1EE02 /* OpenSans-Bold.ttf */,
-				819FE4433C6E4BDA8CA6613F /* OpenSans-Light_italic.ttf */,
-				D7E6F0D54F464F4496F98920 /* OpenSans-Light.ttf */,
-				4C6C4E7D09284B82B164EA6E /* OpenSans-Regular.ttf */,
-				E64D3789D1244CC193456C6D /* OpenSans-SemiBold_italic.ttf */,
-				CC4BA0CF2A084B7F90065DDA /* OpenSans-SemiBold.ttf */,
-				0F5672EFF4C84008A0957655 /* OpenSans.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TheMealsAppTests" */;
 			buildPhases = (
+				932E6A5C0F02F8FFDFEEEC4E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				D0E33774150CAE92A2E6D826 /* [CP] Embed Pods Frameworks */,
+				0EAD25345C5D1989184CEC13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,11 +216,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TheMealsApp" */;
 			buildPhases = (
+				62F30B0E3302D3CF05F98BCF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				ED006C2708955CC25BBC610E /* [CP] Embed Pods Frameworks */,
+				F1FD3916E496F66024362EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +314,118 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		0EAD25345C5D1989184CEC13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62F30B0E3302D3CF05F98BCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheMealsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		932E6A5C0F02F8FFDFEEEC4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheMealsApp-TheMealsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E33774150CAE92A2E6D826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp-TheMealsAppTests/Pods-TheMealsApp-TheMealsAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED006C2708955CC25BBC610E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FD3916E496F66024362EED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheMealsApp/Pods-TheMealsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +478,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62512088117AA654C79F3B0 /* Pods-TheMealsApp-TheMealsAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -361,6 +505,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A478A2108DD0FC5EF37D175 /* Pods-TheMealsApp-TheMealsAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -384,6 +529,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E85C0AB246E9494EE6445F /* Pods-TheMealsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -409,6 +555,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64058E3C8853BCAFA0D3A73 /* Pods-TheMealsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -463,6 +610,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -527,6 +675,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
