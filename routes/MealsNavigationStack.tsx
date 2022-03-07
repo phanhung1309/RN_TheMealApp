@@ -40,7 +40,7 @@ const Stack = createNativeStackNavigator<MealsParamList>();
 
 const MealsNavigationStack = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName={MealsRoutes.Categories}>
+    <Stack.Navigator>
       <Stack.Screen
         name={MealsRoutes.Categories}
         component={CategoriesScreen}

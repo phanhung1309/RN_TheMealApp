@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import MealsNavigationStack from './routes/MealsNavigationStack';
+import RootNavigator from './routes/RootNavigation';
 
 export default function App() {
-  return <NavigationContainer>{MealsNavigationStack()}</NavigationContainer>;
+  return <RootNavigator />;
 }
