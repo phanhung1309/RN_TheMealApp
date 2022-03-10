@@ -3,7 +3,6 @@ import {
   createNativeStackNavigator,
   NativeStackNavigationOptions,
 } from '@react-navigation/native-stack';
-import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
 import {colors} from '../styles/colors';
@@ -40,12 +39,7 @@ const Stack = createNativeStackNavigator<MealsParamList>();
 
 const MealsNavigationStack = (): JSX.Element => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
-        name={MealsRoutes.Categories}
-        component={CategoriesScreen}
-        options={{...screenOptions, title: 'Meal Categories'}}
-      />
+    <Stack.Group>
       <Stack.Screen
         name={MealsRoutes.CategoryMeals}
         component={CategoryMealsScreen}
@@ -71,7 +65,7 @@ const MealsNavigationStack = (): JSX.Element => {
           };
         }}
       />
-    </Stack.Navigator>
+    </Stack.Group>
   );
 };
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import MealsNavigationStack from './MealsNavigationStack';
 import FavoritesScreen from '../screens/FavoritesScreen';
+import CategoriesScreen from '../screens/CategoriesScreen';
 import {colors} from '../styles/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -17,6 +17,13 @@ export type BottomTabParamsList = {
 
 const Tab = createBottomTabNavigator<BottomTabParamsList>();
 
+const headerOptions = {
+  headerTintColor: 'white',
+  headerStyle: {
+    backgroundColor: colors.secondary,
+  },
+};
+
 const tabBarOptions = {
   tabBarStyle: {
     backgroundColor: colors.secondary,
@@ -30,27 +37,25 @@ const BottomTabNavigator = () => {
     <Tab.Navigator initialRouteName={BottomTabRoutes.Meals}>
       <Tab.Screen
         name={BottomTabRoutes.Meals}
-        component={MealsNavigationStack}
+        component={CategoriesScreen}
         options={{
+          ...headerOptions,
           ...tabBarOptions,
           tabBarIcon: tabInfo => (
             <Icon name="restaurant" size={24} color={tabInfo.color} />
           ),
-          headerShown: false,
+          headerTitleAlign: 'center',
         }}
       />
       <Tab.Screen
         name={BottomTabRoutes.Favorites}
         component={FavoritesScreen}
         options={{
+          ...headerOptions,
           ...tabBarOptions,
           tabBarIcon: tabInfo => (
             <Icon name="star" size={24} color={tabInfo.color} />
           ),
-          headerTintColor: 'white',
-          headerStyle: {
-            backgroundColor: colors.secondary,
-          },
           headerTitleAlign: 'center',
         }}
       />
