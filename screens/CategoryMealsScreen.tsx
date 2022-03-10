@@ -1,9 +1,8 @@
-import {StyleSheet, View, FlatList} from 'react-native';
 import React, {useMemo} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
 import {mealData} from '../data/mealData';
-import MealItem from '../components/MealItem';
+import MealList from '../components/MealList';
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.CategoryMeals>;
 
@@ -14,35 +13,7 @@ const CategoryMealsScreen: React.FC<Props> = ({navigation, route}) => {
     );
   }, [route.params.categoryId]);
 
-  return (
-    <View style={styles.screen}>
-      <FlatList
-        showsVerticalScrollIndicator={false}
-        data={displayedMeals}
-        keyExtractor={item => item.id}
-        renderItem={({item}) => (
-          <MealItem
-            title={item.title}
-            durations={item.durations}
-            complexity={item.complexity}
-            affordability={item.affordability}
-            imageUrl={item.imageUrl}
-            onSelect={() =>
-              navigation.navigate(MealsRoutes.MealDetail, {mealId: item.id})
-            }
-          />
-        )}
-      />
-    </View>
-  );
+  return <MealList displayedMeals={displayedMeals} navigation={navigation} />;
 };
 
 export default CategoryMealsScreen;
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 15,
-  },
-});
