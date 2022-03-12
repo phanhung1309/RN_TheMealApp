@@ -4,6 +4,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import CategoriesScreen from '../screens/CategoriesScreen';
 import {colors} from '../styles/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
+import HeaderDrawerMenuButton from '../components/HeaderDrawerMenuButton';
 
 export enum BottomTabRoutes {
   Meals = 'Meals',
@@ -38,14 +39,17 @@ const BottomTabNavigator = () => {
       <Tab.Screen
         name={BottomTabRoutes.Meals}
         component={CategoriesScreen}
-        options={{
+        options={({navigation}) => ({
           ...headerOptions,
           ...tabBarOptions,
           tabBarIcon: tabInfo => (
             <Icon name="restaurant" size={24} color={tabInfo.color} />
           ),
           headerTitleAlign: 'center',
-        }}
+          headerLeft: () => (
+            <HeaderDrawerMenuButton onPress={() => navigation.toggleDrawer()} />
+          ),
+        })}
       />
       <Tab.Screen
         name={BottomTabRoutes.Favorites}

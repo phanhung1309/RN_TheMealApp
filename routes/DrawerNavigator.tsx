@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import BottomTabNavigator, {BottomTabRoutes} from './BottomTabNavigator';
+import BottomTabNavigator from './BottomTabNavigator';
 import FiltersScreen from '../screens/FiltersScreen';
-import {NativeStackNavigationOptions} from '@react-navigation/native-stack';
 
 export enum DrawerRoutes {
   MealsFav = 'MealsFav',
@@ -22,6 +21,7 @@ function DrawerNavigator() {
       <Drawer.Screen
         name={DrawerRoutes.MealsFav}
         component={BottomTabNavigator}
+        options={{headerShown: false}}
       />
       <Drawer.Screen name={DrawerRoutes.Filters} component={FiltersScreen} />
     </Drawer.Navigator>
