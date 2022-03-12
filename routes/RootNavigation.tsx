@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import BottomTabNavigator from './BottomTabNavigator';
+import DrawerNavigator from './DrawerNavigator';
 import MealsNavigationStack from './MealsNavigationStack';
 import {
   createNativeStackNavigator,
@@ -31,7 +32,7 @@ const RootNavigator: React.FC<Props> = () => {
       <RootStack.Navigator>
         <RootStack.Screen
           name={RootRoutes.Meals}
-          component={BottomTabNavigator}
+          component={DrawerNavigator}
           options={screenOptions}
         />
         {MealsNavigationStack()}
