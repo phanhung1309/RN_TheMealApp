@@ -54,14 +54,17 @@ const BottomTabNavigator = () => {
       <Tab.Screen
         name={BottomTabRoutes.Favorites}
         component={FavoritesScreen}
-        options={{
+        options={({navigation}) => ({
           ...headerOptions,
           ...tabBarOptions,
           tabBarIcon: tabInfo => (
             <Icon name="star" size={24} color={tabInfo.color} />
           ),
           headerTitleAlign: 'center',
-        }}
+          headerLeft: () => (
+            <HeaderDrawerMenuButton onPress={() => navigation.toggleDrawer()} />
+          ),
+        })}
       />
     </Tab.Navigator>
   );

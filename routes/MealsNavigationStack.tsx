@@ -9,6 +9,7 @@ import {colors} from '../styles/colors';
 import {categoriesData} from '../data/categoriesData';
 import {mealData} from '../data/mealData';
 import HeaderButton from '../components/HeaderButton';
+import typography from '../styles/typography';
 
 export enum MealsRoutes {
   Categories = 'Categories',
