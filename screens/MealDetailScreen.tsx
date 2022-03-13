@@ -44,11 +44,11 @@ const MealDetailScreen: React.FC<Props> = ({route}) => {
       </View>
       <Text style={styles.title}>Ingredients</Text>
       {ingredients.map(ingredient => (
-        <ListItem>{`- ${ingredient}`}</ListItem>
+        <ListItem key={ingredient}>{`- ${ingredient}`}</ListItem>
       ))}
       <Text style={styles.title}>Steps</Text>
       {steps.map((step, index) => (
-        <ListItem>{`${index + 1}. ${step}`}</ListItem>
+        <ListItem key={step}>{`${index + 1}. ${step}`}</ListItem>
       ))}
     </ScrollView>
   );
