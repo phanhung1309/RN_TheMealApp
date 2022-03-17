@@ -6,6 +6,7 @@ import {colors} from '../styles/colors';
 import HeaderDrawerMenuButton from '../components/HeaderDrawerMenuButton';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import typography from '../styles/typography';
+import HeaderButton from '../components/HeaderButton';
 
 export enum DrawerRoutes {
   MealsFav = 'MealsFav',
@@ -48,6 +49,9 @@ function DrawerNavigator() {
           },
           headerLeft: () => (
             <HeaderDrawerMenuButton onPress={() => navigation.toggleDrawer()} />
+          ),
+          headerRight: () => (
+            <HeaderButton name="ios-save" onPress={() => {}} />
           ),
           drawerIcon: ({color}) => (
             <Icon name="filter-alt" size={20} color={color} />

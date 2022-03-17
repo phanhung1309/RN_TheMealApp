@@ -62,7 +62,9 @@ const MealsNavigationStack = (): JSX.Element => {
             ...screenOptions,
             title: selectedMeal.title,
             headerTitleStyle: {fontSize: 15},
-            headerRight: () => <HeaderButton onPress={() => {}} />,
+            headerRight: () => (
+              <HeaderButton name="ios-star" onPress={() => {}} />
+            ),
           };
         }}
       />
