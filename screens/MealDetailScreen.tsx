@@ -1,10 +1,10 @@
 import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import React, {useMemo} from 'react';
-import {mealData} from '../data/mealData';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import typography from '../styles/typography';
+import {useAppSelector} from '../hooks';
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.MealDetail>;
 
@@ -21,8 +21,10 @@ const ListItem: React.FC<ItemProps> = ({children}) => {
 };
 
 const MealDetailScreen: React.FC<Props> = ({route}) => {
+  const availableMeals = useAppSelector(state => state.meals.meals);
+
   const displayedMeal = useMemo(() => {
-    return mealData.find(meal => meal.id === route.params.mealId);
+    return availableMeals.find(meal => meal.id === route.params.mealId);
   }, [route.params.mealId]);
 
   const {imageUrl, durations, complexity, affordability, ingredients, steps} =

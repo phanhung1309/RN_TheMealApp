@@ -1,14 +1,16 @@
 import React, {useMemo} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
-import {mealData} from '../data/mealData';
 import MealList from '../components/MealList';
+import {useAppSelector} from '../hooks';
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.CategoryMeals>;
 
 const CategoryMealsScreen: React.FC<Props> = ({navigation, route}) => {
+  const availableMeals = useAppSelector(state => state.meals.meals);
+
   const displayedMeals = useMemo(() => {
-    return mealData.filter(meal =>
+    return availableMeals.filter(meal =>
       meal.categoryIds.includes(route.params.categoryId),
     );
   }, [route.params.categoryId]);
