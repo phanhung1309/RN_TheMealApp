@@ -23,6 +23,7 @@ export type MealsParamList = {
   [MealsRoutes.MealDetail]: {
     mealId: string;
     mealTitle: string;
+    toggleFav: () => void;
   };
 };
 
@@ -59,7 +60,7 @@ const MealsNavigationStack = (): JSX.Element => {
             title: route.params.mealTitle,
             headerTitleStyle: {fontSize: 15},
             headerRight: () => (
-              <HeaderButton name="ios-star" onPress={() => {}} />
+              <HeaderButton name="ios-star" onPress={route.params.toggleFav} />
             ),
           };
         }}

@@ -1,10 +1,15 @@
-import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
-import React, {useMemo} from 'react';
+import {StyleSheet, Text, View, ScrollView, Image, LogBox} from 'react-native';
+import React, {useCallback, useEffect, useMemo} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MealsParamList, MealsRoutes} from '../routes/MealsNavigationStack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import typography from '../styles/typography';
-import {useAppSelector} from '../hooks';
+import {useAppSelector, useAppDispatch} from '../hooks';
+import {toggleFavorite} from '../store/meals/mealsSlice';
+
+LogBox.ignoreLogs([
+  'Non-serializable values were found in the navigation state.',
+]);
 
 type Props = NativeStackScreenProps<MealsParamList, MealsRoutes.MealDetail>;
 
@@ -20,8 +25,9 @@ const ListItem: React.FC<ItemProps> = ({children}) => {
   );
 };
 
-const MealDetailScreen: React.FC<Props> = ({route}) => {
+const MealDetailScreen: React.FC<Props> = ({route, navigation}) => {
   const availableMeals = useAppSelector(state => state.meals.meals);
+  const dispatch = useAppDispatch();
 
   const displayedMeal = useMemo(() => {
     return availableMeals.find(meal => meal.id === route.params.mealId);
@@ -29,6 +35,14 @@ const MealDetailScreen: React.FC<Props> = ({route}) => {
 
   const {imageUrl, durations, complexity, affordability, ingredients, steps} =
     displayedMeal;
+
+  const handleToggleFavorite = useCallback(() => {
+    dispatch(toggleFavorite(route.params.mealId));
+  }, [dispatch, route.params.mealId]);
+
+  useEffect(() => {
+    navigation.setParams({toggleFav: handleToggleFavorite});
+  }, [handleToggleFavorite]);
 
   return (
     <ScrollView>
