@@ -27,6 +27,9 @@ const ListItem: React.FC<ItemProps> = ({children}) => {
 
 const MealDetailScreen: React.FC<Props> = ({route, navigation}) => {
   const availableMeals = useAppSelector(state => state.meals.meals);
+  const currentMealIsFavorite = useAppSelector(state =>
+    state.meals.favoriteMeals.some(meal => meal.id === route.params.mealId),
+  );
   const dispatch = useAppDispatch();
 
   const displayedMeal = useMemo(() => {
@@ -43,6 +46,10 @@ const MealDetailScreen: React.FC<Props> = ({route, navigation}) => {
   useEffect(() => {
     navigation.setParams({toggleFav: handleToggleFavorite});
   }, [handleToggleFavorite]);
+
+  useEffect(() => {
+    navigation.setParams({isFavMeal: currentMealIsFavorite});
+  }, [currentMealIsFavorite]);
 
   return (
     <ScrollView>

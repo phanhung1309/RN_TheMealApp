@@ -24,6 +24,7 @@ export type MealsParamList = {
     mealId: string;
     mealTitle: string;
     toggleFav: () => void;
+    isFavMeal: boolean;
   };
 };
 
@@ -60,7 +61,11 @@ const MealsNavigationStack = (): JSX.Element => {
             title: route.params.mealTitle,
             headerTitleStyle: {fontSize: 15},
             headerRight: () => (
-              <HeaderButton name="ios-star" onPress={route.params.toggleFav} />
+              <HeaderButton
+                name="ios-star"
+                onPress={route.params.toggleFav}
+                color={route.params.isFavMeal ? 'orange' : 'white'}
+              />
             ),
           };
         }}
