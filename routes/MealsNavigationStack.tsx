@@ -7,9 +7,7 @@ import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
 import {colors} from '../styles/colors';
 import {categoriesData} from '../data/categoriesData';
-import {mealData} from '../data/mealData';
 import HeaderButton from '../components/HeaderButton';
-import typography from '../styles/typography';
 
 export enum MealsRoutes {
   Categories = 'Categories',
@@ -24,6 +22,7 @@ export type MealsParamList = {
   };
   [MealsRoutes.MealDetail]: {
     mealId: string;
+    mealTitle: string;
   };
 };
 
@@ -55,12 +54,9 @@ const MealsNavigationStack = (): JSX.Element => {
         name={MealsRoutes.MealDetail}
         component={MealDetailScreen}
         options={({route}) => {
-          const selectedMeal = mealData.find(
-            meal => meal.id === route.params.mealId,
-          );
           return {
             ...screenOptions,
-            title: selectedMeal.title,
+            title: route.params.mealTitle,
             headerTitleStyle: {fontSize: 15},
             headerRight: () => (
               <HeaderButton name="ios-star" onPress={() => {}} />

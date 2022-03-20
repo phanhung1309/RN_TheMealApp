@@ -24,7 +24,10 @@ const MealList: React.FC<Props> = ({displayedMeals, navigation}) => {
             affordability={item.affordability}
             imageUrl={item.imageUrl}
             onSelect={() =>
-              navigation.navigate(MealsRoutes.MealDetail, {mealId: item.id})
+              navigation.navigate(MealsRoutes.MealDetail, {
+                mealId: item.id,
+                mealTitle: item.title,
+              })
             }
           />
         )}
