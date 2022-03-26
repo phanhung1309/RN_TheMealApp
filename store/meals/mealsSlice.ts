@@ -1,6 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {mealData} from '../../data/mealData';
 import {Meal} from '../../models/Meal';
+import {Filter} from '../../screens/FiltersScreen';
 
 interface MealsState {
   meals: Array<Meal>;
@@ -31,9 +32,21 @@ export const mealsSlice = createSlice({
         state.favoriteMeals.push(meal);
       }
     },
+    setFilters: (state, action: PayloadAction<Filter>) => {
+      const appliedFilters = action.payload;
+
+      state.filteredMeals = state.meals.filter(meal => {
+        for (const key in appliedFilters) {
+          if (appliedFilters[`${key}`] && !meal[`${key}`]) {
+            return false;
+          }
+        }
+        return true;
+      });
+    },
   },
 });
 
-export const {toggleFavorite} = mealsSlice.actions;
+export const {toggleFavorite, setFilters} = mealsSlice.actions;
 
 export default mealsSlice.reducer;

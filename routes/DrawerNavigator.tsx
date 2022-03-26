@@ -15,7 +15,9 @@ export enum DrawerRoutes {
 
 export type DrawerParamsList = {
   [DrawerRoutes.MealsFav]: undefined;
-  [DrawerRoutes.Filters]: undefined;
+  [DrawerRoutes.Filters]: {
+    save: () => void;
+  };
 };
 
 const Drawer = createDrawerNavigator<DrawerParamsList>();
@@ -41,7 +43,7 @@ function DrawerNavigator() {
       <Drawer.Screen
         name={DrawerRoutes.Filters}
         component={FiltersScreen}
-        options={({navigation}) => ({
+        options={({navigation, route}) => ({
           headerTitle: 'Filters Meal',
           headerTintColor: 'white',
           headerStyle: {
@@ -51,7 +53,7 @@ function DrawerNavigator() {
             <HeaderDrawerMenuButton onPress={() => navigation.toggleDrawer()} />
           ),
           headerRight: () => (
-            <HeaderButton name="ios-save" onPress={() => {}} />
+            <HeaderButton name="ios-save" onPress={route.params.save} />
           ),
           drawerIcon: ({color}) => (
             <Icon name="filter-alt" size={20} color={color} />
