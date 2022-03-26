@@ -53,7 +53,7 @@ function DrawerNavigator() {
             <HeaderDrawerMenuButton onPress={() => navigation.toggleDrawer()} />
           ),
           headerRight: () => (
-            <HeaderButton name="ios-save" onPress={route.params.save} />
+            <HeaderButton name="ios-save" onPress={route.params?.save} />
           ),
           drawerIcon: ({color}) => (
             <Icon name="filter-alt" size={20} color={color} />
